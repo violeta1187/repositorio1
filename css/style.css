@@ -1,0 +1,595 @@
+
+
+
+
+
+/*ESTILOS GENERALES*/
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+body{
+  
+  background-image: url("../assets/img/fondo.png");
+}
+a{
+  text-decoration: none;
+}
+.principal{
+  width: 100%;
+  height: 100hv;
+  margin: 0px auto;
+  box-shadow: 0px 0px 10px #ccc;
+  /*margin-bottom: 40px;*/
+  background-color: #e9eef0;
+  background: url(../assets/img/imagen\ con\ ps.png);
+  background-position: center;
+  background-attachment: contain;
+  background-size: cover;
+  min-height: 600px;
+}
+/*CABECERA*/
+
+.header{
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+
+  border-bottom:2px solid rgba(225, 225, 226, 0.8); 
+  background: #f0ede9;
+  border-bottom: 1px solid rgba(255 ,255, 255, 5 );
+  background: rgb(67,67,67);
+  background: linear-gradient(0deg, rgba(48, 31, 31) 0%,rgba(162, 109, 109, 0.99) 55%);
+}
+
+@media(max-width: 1024px){
+  .header{
+      background: red;
+  }
+}
+
+.logo img{
+  flex-grow: 1;
+  flex-basis: 50%;
+  max-height: 120px;
+  margin-left: 10px;
+  transition: all 300ms;
+} 
+
+
+/*BARRA DE NAVEGACIÓN*/
+.colornav{
+  background: rgb(67,67,67);
+  background: linear-gradient(0deg, rgba(48, 31, 31) 0%,rgba(162, 109, 109, 0.99) 55%);
+}
+.nav{
+
+  display: flex;
+  flex-basis: 45%;
+  height: 100%;
+  padding-right: 10px;
+  
+
+}
+.nav >ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  list-style: none;
+}
+.nav> ul> li{
+  display: flex;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+}
+.nav a{
+  text-transform: uppercase;
+  color: rgb(48, 31, 31);
+  font-size: 12px;
+  padding: 0 5px;
+  letter-spacing: 1px;
+  transition: all 300ms;
+}
+
+.social{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+ /* justify-content: space-between;*/
+  
+
+
+}
+.social img {
+  background:rgb(48, 31, 31) ;
+  height: 20px;
+  width: 20px;
+  padding: 2px;
+  
+ 
+}
+.social a{
+  font-size: 18px;
+  color:  rgb(48, 31, 31);
+  padding: 0 5px;
+}
+.social li{
+  list-style: none;
+}
+.social i:hover{
+  color:whitesmoke;
+}
+
+
+/*------CONTENIDO INDEX------*/
+/*-------SECCION 1-----*/
+.texto-principal{
+  position: absolute;/*dentro del banner*/
+  text-align: center;
+
+ transform: translateX(-50%)translateY(-50%);
+  top:50%;
+  left:50%;
+  width: 100%;
+  font-size:15px;
+  margin-top:25px;
+
+
+}
+.texto-principal h1{
+  font-family: "nevis";
+  color:  rgb(48, 31, 31);
+  text-shadow:2px 2px 2px black ;
+  font-size:40px;
+  font-weight: 100px;
+  text-align: center;
+  line-height: 1.6;
+  margin-left: 10px;
+  margin-top: 100px;
+}
+.texto-principal h1:hover{
+  text-shadow: 0px 2px 1px #333333, 0px 0px 4px  rgb(48, 31, 31);
+}
+.texto-principal h2{
+  font-family: Arial, Helvetica, sans-serif;
+  color:  rgb(48, 31, 31);
+  font-size: 25px;
+  text-shadow: 0px 2px 1px rgb(104, 101, 97);
+}
+
+
+.texto-principal .buttonPrincipal{
+  background:rgb(48, 31, 31) ;
+  border: none;
+  padding: 12px;
+  color: whitesmoke;
+  font-size: 16px;
+
+}
+.texto-principal .buttonPrincipal:hover{
+ border:  2px solid rgb(48, 31, 31) ;
+  background:none;
+
+}
+input {
+  width: 106px;
+  height: 50px;
+  transition: all 2s;
+}
+.colorcarousel{
+  color: black;
+}
+
+
+
+/*----CONTENIDO SOBRE MI----*/
+
+/* BANNER */
+
+.banner-sobremi{
+  width: 75%;
+  height: 400px;
+  
+}
+
+/*SECCION 2*/
+.principal{
+  background-image: url("../assets/img/fondo.png");
+}
+.contenidoPersonal{
+  width: 100%;
+  height: 100hv;
+ 
+  
+}
+.contenidoPersonal.caja_Texto{
+  width: 100%;
+  height:350px;
+  color: white;
+  text-shadow: 2px 2px 2px black;
+  margin: 20px;
+  margin-left: 80px;
+  align-items: center;
+}
+.contenidoPersonal h2{
+  text-align: center;
+  font-family:"nevis";
+  font-size: 40px;
+  color: rgb(48, 31, 31);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 80px;
+  text-shadow: 2px 2px 2px black;
+}
+
+.contenidoPersonal p{
+  text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+  word-spacing: 10px;
+  font-size: 18px;
+  padding: 20px 2px 1px 3px;
+  color:#f0ede9 ;
+}
+.contenidoPersonal Img{
+  width: 40%;
+  height: 350px;
+  background-color: #C1AA84;
+  border: 10px solid gray;
+  border-radius: 10px;
+  margin: 20px;
+  margin-left: 30px;
+  box-shadow:0 5px 5px rgba(0,0,0,0.2);
+  
+}
+
+
+
+
+/*-----CONTENIDO SERVICIOS-----*/
+/*SECCION 3*/
+
+.servicios--dog{
+  height: 100hv;
+}
+.servicios--dog h1{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 100px;
+  font-weight: 100;
+  font-family:"nevis";
+  letter-spacing: 4px;
+  color: rgb(48, 31, 31);
+  text-shadow: 2px 2px 2px black;
+}
+.card-group{
+  width: 100%;
+  max-width: 1200px;
+  height:630px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  
+}
+.card-group .card{
+  width: 500;
+  height: 450px;
+  border-radius: 8px;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+  overflow: hidden;
+  margin: 10px;
+  text-align: center;
+  transition: all 0.25s;
+
+}
+.card-group .card:hover{
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+
+}
+.card-group .card img{
+  width: 200px;
+  height: 150px;
+}
+
+.card-group .card h5{
+  font-size: 18px;
+
+}
+.card-group .card p{
+  padding: 0 1rem;
+  font-size: 20px;
+ font-size: 15px;
+}
+
+
+
+/*----CONTENIDO GALERIA----*/
+/*SECCION 4*/
+
+.galeria--dog h1{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 100px;
+  font-weight: 100;
+  font-family:"nevis";
+  letter-spacing: 4px;
+  color: rgb(48, 31, 31);
+  text-shadow: 2px 2px 2px black;
+
+}
+.galeria--dog{
+  margin: 20px;
+}
+.grid-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+  border-radius: 4px;
+  transition: transform 0.3s ease-in-out;
+  border: 1px solid rgb(48, 31, 31);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: grayscale(1);
+}
+.grid-item:hover{
+  filter: opacity(0.9);
+  transform: scale(1.04);
+}
+.grid-container{
+  display: grid;
+  grid-template-columns:repeat(auto-fill,minmax(240px,1fr));
+  grid-auto-rows: minmax(200px,auto);
+  gap:20px;
+  padding: 20px;
+  grid-auto-flow: dense;
+}
+
+@media(min-width:600px){
+.wide{
+ grid-column:span 2;
+}
+.tall{
+  grid-row: span 2;
+}
+}
+@media(min-width: 1024){
+  .wide{
+      grid-column:span 2;
+   }
+   .tall{
+       grid-row: span 2;
+   }
+}
+
+
+
+
+
+/*----CONTENIDO CONTACTOS----*/
+/*SECCION 5*/
+.form--register {
+  display: grid;
+  padding: 1em;
+  background:rgb(68, 155, 82);
+  border: 1px solid #c1c1c1;
+  margin: 2rem auto 2rem auto;
+  max-width: 600px;
+  padding: 1em;
+}
+.form_registro{
+  font-size: 20px;
+  color: rgb(48, 31, 31) ;
+  text-align: center;
+}
+form input {
+  background: #fff;
+  border: 1px solid #9c9c9c;
+}
+form button {
+  background:#ccc;
+  padding: 0.7em;
+  width: 100%;
+  border: 0;
+}
+form button:hover {
+  background: #CD1D35;
+}
+
+label {
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+input {
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+input:focus {
+  outline: 3px solid  #CD1D35;
+}
+
+@media (min-width: 400px) {
+  form {
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+  }
+
+  label {
+    text-align: right;
+    grid-column: 1 / 2;
+  }
+
+  input,
+  button {
+    grid-column: 2 / 3;
+  }
+}
+.form-register h5{
+  font-size: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+/*
+.controls{
+  width: 100%;
+  background: #C1AA84;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}*/
+.form-register p{
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 40px;
+}
+.form-register a{
+  color: white;
+  text-decoration: underline;
+}
+/*
+.form-register .botons{
+  display: block;
+  width: 100%;
+  background:rgb(48, 31, 31); 
+  border-style: 4px;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+  cursor: pointer;
+}*/
+.box{
+  position: absolute;
+  padding-bottom: 2px;
+
+}
+.box select{
+  background:#C1AA84 ;
+  border-radius: 1px solid rgb(48, 31, 31);
+}
+.cajita{
+  padding-bottom: 1px;
+}
+/*input {
+  width: 50px; height: 50px;
+  transition: all 2s;       
+}*/
+/*input:focus {
+  width: 200px;
+  font-size: 24px;
+}*/
+
+
+
+
+/*----FOOTER-----*/
+/*SECCION 6*/
+/*
+.columna-sbm{
+  margin-bottom:300px;
+  margin-right: 0;
+  padding-right: 0;
+}*/
+
+.footer{
+  background:rgb(48, 31, 31) ;
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  height: 100px;
+  align-items: center;
+  border-top: 1px solid rgba(255 ,255, 255, 5 );
+  background: rgb(67,67,67);
+  background: linear-gradient(0deg, rgba(48, 31, 31) 0%,rgba(162, 109, 109, 0.99) 55%);
+}
+
+.footer .logo{
+  opacity: 0.5;
+  flex-basis: auto;
+  text-align:left;
+}
+
+.pie{
+  
+  text-align: center;
+  flex-grow: 8;
+}
+.pie p{
+  font-family: cambria;
+  font-size: 12px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+.MenuAnimado {
+font-family: 'Raleway', Arial, sans-serif;
+text-align: center;
+text-transform: uppercase;
+font-weight: 500;
+}
+.MenuAnimado * {
+box-sizing: border-box;
+-webkit-transition: all 0.35s ease;
+transition: all 0.35s ease;
+}
+.MenuAnimado li {
+display: inline-block;
+list-style: outside none none;
+margin: 0 1.5em;
+overflow: hidden;
+}
+.MenuAnimado a {
+padding: 0.3em 0;
+color: rgba(255, 255, 255, 0.5);
+position: relative;
+display: inline-block;
+letter-spacing: 1px;
+margin: 0;
+text-decoration: none;
+}
+.MenuAnimado a:before,
+.MenuAnimado a:after {
+position: absolute;
+-webkit-transition: all 0.35s ease;
+transition: all 0.35s ease;
+}
+.MenuAnimado a:before {
+bottom: 100%;
+display: block;
+height: 3px;
+width: 100%;
+content: "";
+background-color: rgb(71, 60, 60);
+}
+.MenuAnimado a:after {
+padding: 0.3em 0;
+position: absolute;
+bottom: 100%;
+left: 0;
+content: attr(data-hover);
+color: white;
+white-space: nowrap;
+}
+.MenuAnimado li:hover a,
+.MenuAnimado .current a {
+transform: translateY(100%);
+}
